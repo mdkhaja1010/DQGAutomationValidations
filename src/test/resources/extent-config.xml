@@ -11,9 +11,9 @@
 		<!-- defaults to https -->
 		<protocol>https</protocol>
 		<!-- title of the document -->
-		<documentTitle>Amazon-Extent-Reports</documentTitle>
+		<documentTitle>DQ_Gateway-Extent-Reports</documentTitle>
 		<!-- report name - displayed at top-nav -->
-		<reportName>Amazon Test Reports</reportName>
+		<reportName>DQ_Gateway Test Reports</reportName>
 		<!-- location of charts in the test view -->
 		<!-- top, bottom -->
 		<testViewChartLocation>bottom</testViewChartLocation>

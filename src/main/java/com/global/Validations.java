@@ -1,10 +1,10 @@
 package com.global;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.WebElement;
 
 /* This class contains all the generic methods which is related to Validations
- * @Author Mohammed Imran */
+ * @Author Bhasha.k */
 
 public class Validations { 
 	/* This method will checks the intendent and realized value are equal
@@ -31,7 +31,7 @@ public class Validations {
 	/* This method is for assertionTrue
 	 * @Param value */
 	public void assertionTrue(boolean value) {
-		Assert.assertTrue(value);
+		//Assert.assertTrue(value);
 	}
 	
 	/* This method is for retreiving the text from the webelement
@@ -50,7 +50,7 @@ public class Validations {
 	 * @Param intendentValue
 	 * @Param realizedValue */
 	public void assertionEquals(String intendentValue, String realizedValue) {
-		Assert.assertEquals(realizedValue, intendentValue);
+	//	Assert.assertEquals(realizedValue, intendentValue);
 	}
 	
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="8.588" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="As a user i want to validate Data Quality Rules" name="Loginto DQG Tool" time="8.41">
+<failure type="org.openqa.selenium.WebDriverException" message="unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f172bb4bdf5d83ae22f7d5ccd086690, get {url=http://localhost:81/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\BHASHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54321/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f172bb4bdf5d83ae22f7d5ccd086690">
+<![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.71)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f172bb4bdf5d83ae22f7d5ccd086690, get {url=http://localhost:81/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\BHASHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54321/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f172bb4bdf5d83ae22f7d5ccd086690
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at com.steps.Hooks.setUp(Hooks.java:41)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch DQG Application................................................skipped
+And Enter the valid Credentials for accessing DQG...........................skipped
+And Click on Sign button....................................................skipped
+And Enter into "Data Quality Rules" module..................................skipped
+And Create rule by selecting Database.......................................skipped
+And Select Data Source List.................................................skipped
+And Click on Next button....................................................skipped
+And Select table from list..................................................skipped
+And Click on Go button......................................................skipped
+When Click on the Columns Text..............................................skipped
+And Validate the columns are displayed......................................skipped
+And Select "Country" from Column name in Table..............................skipped
+And Validate select data quality checks is visible..........................skipped
+And Select "Ends with" from Data Quality Checks  and update "a" in text field.skipped
+And Validate  Match data type is visible....................................skipped
+And Select "Text" from Match Datatype.......................................skipped
+And Click on Add Data Quality Checks button.................................skipped
+And Click on create DQ rule button..........................................skipped
+And Update "Postgres DQRule" in DQ Rule name field..........................skipped
+And Click on Create button..................................................skipped
+Then Validate DQ rule name is updated in the Data Quality module............skipped
+]]></system-out>
+</testcase>
+</testsuite>

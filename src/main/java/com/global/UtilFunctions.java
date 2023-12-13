@@ -2,6 +2,9 @@ package com.global;
 
 
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.Set;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,7 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /* This class contains all the generic methods which is related to WebDriver
- *@Author Mohammed Imran */
+ *@Author Bhasha.k */
 public class UtilFunctions {
 	Actions action;
 	WebDriverWait wait;
@@ -84,6 +87,46 @@ public class UtilFunctions {
 	public void quitBrowser() {
 		driver.quit();
 	}
+	public void expicitWaitForVisibilityOfTitle(String title, int time) {
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+		wait.until(ExpectedConditions.titleIs(title));
+	}
+	
+	public void waitUntillElementVisible( WebElement ele)
+	{
+		try {
+		Thread.sleep(5000);
+		}
+		catch(Exception e) {
+			
+		}
+	}
+	
+	public void downKey() 
+	{
+		try {
+		Robot r=new Robot();
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_ENTER);
+		}
+		catch (Exception e) {
+			
+		}
+	}
+	
+	public void scrolltoElement(WebElement ele)
+	{
+		JavascriptExecutor js =(JavascriptExecutor)driver;
+		 js.executeScript("arguments[0].scrollIntoView(true)", ele);
+				
+	}
+	
+	public void scrollby()
+	{
+		JavascriptExecutor js =(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,250)", " ");
+	}
+	
 }
 	
 	

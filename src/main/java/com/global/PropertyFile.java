@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 /* This class contains the methods which is used to read data from propertyfile
- *@Author Mohammed Imran */
+ *@Author bhasha.k */
 public class PropertyFile {
 	Constants constantutility = new Constants();
 	FileInputStream fis;
@@ -22,13 +22,22 @@ public class PropertyFile {
 			System.out.println("Exception is "+e.getMessage());
 		}
 	}
-	public String getApplicationUrl() {
-		String url=pro.getProperty("Url");
-		return url;
+	public String getEmail() {
+		String strEmail=pro.getProperty("email");
+		return strEmail;
 	}
 	
-	public String getApplicationBrowser() {
-		String browser=pro.getProperty("Browser");
-		return browser;
+	public String getPassword() {
+		String strPassword=pro.getProperty("password");
+		return strPassword;
 	}
+	
+	public String getRuleName()
+	{
+		String strRulename=pro.getProperty("DQRuleName");
+		return strRulename;
+	}
+	
+	
+	
 }

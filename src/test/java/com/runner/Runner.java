@@ -7,12 +7,14 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features=".\\Features",
-glue = {"com.steps","com.hooks"},
+glue = {"com.steps"},
 dryRun =false, 
+tags="@DataQualityRule",
 monochrome = true,
 plugin={"pretty","html:test-output",
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
-
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+		"json:Reports//JSON_Reports//cucumber.json",
+		"junit:Reports//JUNiT_Reports//cucumber.xml"}
 )
 public class Runner {
 

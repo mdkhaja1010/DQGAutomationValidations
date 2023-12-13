@@ -2,7 +2,7 @@ package com.global;
 
 /*
  *This class contains all the paths which is releated to the framework
- *@Author Mohammed Imran 
+ *@Author Bhasha.k
  * */
 public class Constants {
 	private String propertyFilePath=System.getProperty("user.dir")+"/src/test/resources/config.properties";
@@ -16,4 +16,5 @@ public class Constants {
 	 public String getExcellFilePath() {
 		 return excellFilePath;
 	 }
+	 
 }
